@@ -1,0 +1,114 @@
+{
+    "data": [
+        {
+            "p_cnt": "Spain",
+            "p_fl": "https://openai.amobear.com/2025_xsafe/images/01_spain_madrid.webp",
+            "p_ip": "103.151.40.21",
+            "p_pt": "54327",
+            "p_un": "gtmadrid8",
+            "p_pw": "CJu*SqtE6eDi",
+            "p_ds": "Madrid",
+            "p_pro": 0
+        },
+        {
+            "p_cnt": "Canada",
+            "p_fl": "https://openai.amobear.com/2025_xsafe/images/02_canada_vancouver.webp",
+            "p_ip": "38.96.254.81",
+            "p_pt": "54327",
+            "p_un": "gtvancid6",
+            "p_pw": "uCJ#5XzUTMLEjB",
+            "p_ds": "Vancouver",
+            "p_pro": 0
+        },
+        {
+            "p_cnt": "Netherland",
+            "p_fl": "https://openai.amobear.com/2025_xsafe/images/03_netherland_amsterdam.webp",
+            "p_ip": "69.50.94.44",
+            "p_pt": "54327",
+            "p_un": "gtamstrid7",
+            "p_pw": "8h#eCY&uT44TE",
+            "p_ds": "Amsterdam",
+            "p_pro": 0
+        },
+        {
+            "p_cnt": "United States",
+            "p_fl": "https://openai.amobear.com/2025_xsafe/images/04_united_states_los_angeles.webp",
+            "p_ip": "45.32.84.83",
+            "p_pt": "3128",
+            "p_un": "uslauser",
+            "p_pw": "6JTjL5#hiypVH#e",
+            "p_ds": "Los Angeles",
+            "p_pro": 0
+        },
+        {
+            "p_cnt": "Switzerland",
+            "p_fl": "https://openai.amobear.com/2025_xsafe/images/05_switzerland_zurich.webp",
+            "p_ip": "23.166.88.4",
+            "p_pt": "54327",
+            "p_un": "htzurcid5",
+            "p_pw": "KmAySRC#&2X4",
+            "p_ds": "Zurich",
+            "p_pro": 0
+        },
+        {
+            "p_cnt": "United States",
+            "p_fl": "https://openai.amobear.com/2025_xsafe/images/06_united_states_florida.webp",
+            "p_ip": "38.110.1.46",
+            "p_pt": "54327",
+            "p_un": "gtmiamid",
+            "p_pw": "K*Prm8C6$T9GV",
+            "p_ds": "Florida",
+            "p_pro": 0
+        },
+        {
+            "p_cnt": "United Kingdom",
+            "p_fl": "https://openai.amobear.com/2025_xsafe/images/07_united_kingdom_london.webp",
+            "p_ip": "83.147.17.63",
+            "p_pt": "54327",
+            "p_un": "regxuklond1",
+            "p_pw": "GeTbLX7qMNvAg",
+            "p_ds": "London",
+            "p_pro": 1
+        },
+        {
+            "p_cnt": "Singapore",
+            "p_fl": "https://openai.amobear.com/2025_xsafe/images/08_singapore_singapore.webp",
+            "p_ip": "206.206.76.248",
+            "p_pt": "54327",
+            "p_un": "rgsingid3",
+            "p_pw": "UzTHAm&6MQ3iye",
+            "p_ds": "Singapore",
+            "p_pro": 1
+        },
+        {
+            "p_cnt": "United States",
+            "p_fl": "https://openai.amobear.com/2025_xsafe/images/09_united_states_new_york.webp",
+            "p_ip": "167.17.69.145",
+            "p_pt": "54327",
+            "p_un": "gtnewyrid",
+            "p_pw": "6$z7$G4zTeFM",
+            "p_ds": "New York",
+            "p_pro": 1
+        },
+        {
+            "p_cnt": "Japan",
+            "p_fl": "https://openai.amobear.com/2025_xsafe/images/10_japan_tokyo.webp",
+            "p_ip": "66.42.37.61",
+            "p_pt": "3128",
+            "p_un": "jpproser",
+            "p_pw": "uWJf8CvGYheE&f",
+            "p_ds": "Tokyo",
+            "p_pro": 1
+        },
+        {
+            "p_cnt": "United States",
+            "p_fl": "https://openai.amobear.com/2025_xsafe/images/11_united_states_seattle.webp",
+            "p_ip": "169.197.143.56",
+            "p_pt": "54327",
+            "p_un": "gtseatid4",
+            "p_pw": "bYN7xbM&#F6HPH",
+            "p_ds": "Seattle",
+            "p_pro": 1
+        }
+    ]
+}
