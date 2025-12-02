@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAN Shooter - Multiplayer Deathmatch</title>
+    <link rel="stylesheet" href="css/game.css">
+</head>
+
+<body>
+    <!-- Connection Screen -->
+    <div id="connectionScreen" class="screen">
+        <div class="container">
+            <h1 class="title">🎮 LAN SHOOTER</h1>
+            <p class="subtitle">Side-scrolling Multiplayer Deathmatch</p>
+
+            <div class="connection-form">
+                <label for="serverIP">Server IP Address:</label>
+                <input type="text" id="serverIP" placeholder="localhost:3000" value="localhost:3000">
+
+                <label for="playerName">Your Name:</label>
+                <input type="text" id="playerName" placeholder="Player" maxlength="15">
+
+                <button id="connectBtn" class="btn-primary">Connect to Game</button>
+                <div id="connectionStatus"></div>
+            </div>
+
+            <div class="instructions">
+                <h3>Controls:</h3>
+                <ul>
+                    <li><strong>A/D</strong> or <strong>←/→</strong> - Move Left/Right</li>
+                    <li><strong>W</strong> or <strong>Space</strong> - Jump</li>
+                    <li><strong>Mouse</strong> - Aim</li>
+                    <li><strong>Left Click</strong> - Shoot/Attack</li>
+                    <li><strong>1-6</strong> - Switch Weapons</li>
+                    <li><strong>Tab</strong> - Scoreboard</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Game Screen -->
+    <div id="gameScreen" class="screen" style="display: none;">
+        <!-- HUD -->
+        <div id="hud">
+            <div class="hud-left">
+                <div class="health-bar-container">
+                    <div class="label">HEALTH</div>
+                    <div class="health-bar">
+                        <div id="healthBar" class="health-fill"></div>
+                    </div>
+                    <div id="healthText" class="health-text">100/100</div>
+                </div>
+            </div>
+
+            <div class="hud-center">
+                <div id="killCounter" class="stat">
+                    <span class="stat-label">KILLS:</span>
+                    <span id="kills" class="stat-value">0</span>
+                </div>
+                <div id="deathCounter" class="stat">
+                    <span class="stat-label">DEATHS:</span>
+                    <span id="deaths" class="stat-value">0</span>
+                </div>
+            </div>
+
+            <div class="hud-right">
+                <div class="weapon-display">
+                    <div class="label">WEAPON</div>
+                    <div id="weaponName" class="weapon-name">Pistol</div>
+                    <div id="weaponSelector" class="weapon-selector">
+                        <div class="weapon-item active" data-weapon="pistol" title="1 - Pistol">🔫</div>
+                        <div class="weapon-item" data-weapon="assault_rifle" title="2 - Assault Rifle">🔫</div>
+                        <div class="weapon-item" data-weapon="shotgun" title="3 - Shotgun">💥</div>
+                        <div class="weapon-item" data-weapon="sniper" title="4 - Sniper">🎯</div>
+                        <div class="weapon-item" data-weapon="knife" title="5 - Knife">🔪</div>
+                        <div class="weapon-item" data-weapon="shield" title="6 - Shield">🛡️</div>
+                    </div>
+                </div>
+                <button id="toggleScoreboard" class="btn-small">Scoreboard (Tab)</button>
+            </div>
+        </div>
+
+        <!-- Scoreboard -->
+        <div id="scoreboard" class="scoreboard" style="display: none;">
+            <h2>SCOREBOARD</h2>
+            <table id="scoreTable">
+                <thead>
+                    <tr>
+                        <th>Player</th>
+                        <th>Kills</th>
+                        <th>Deaths</th>
+                        <th>K/D</th>
+                    </tr>
+                </thead>
+                <tbody id="scoreTableBody">
+                </tbody>
+            </table>
+            <p class="scoreboard-hint">Press TAB to close</p>
+        </div>
+
+        <!-- Canvas -->
+        <canvas id="gameCanvas"></canvas>
+
+        <!-- Kill Feed -->
+        <div id="killFeed" class="kill-feed"></div>
+
+        <!-- Respawn Message -->
+        <div id="respawnMessage" class="respawn-message" style="display: none;">
+            <h2>YOU DIED</h2>
+            <p>Respawning...</p>
+        </div>
+    </div>
+
+    <!-- Socket.io -->
+    <script src="/socket.io/socket.io.js"></script>
+
+    <!-- Game Scripts -->
+    <script src="js/sounds.js"></script>
+    <script src="js/Weapon.js"></script>
+    <script src="js/Player.js"></script>
+    <script src="js/Bullet.js"></script>
+    <script src="js/Map.js"></script>
+    <script src="js/Renderer.js"></script>
+    <script src="js/NetworkClient.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
